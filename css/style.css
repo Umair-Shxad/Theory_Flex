@@ -1,0 +1,472 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+html{
+    font-size: 17px;
+}
+
+/* flex box CSS */
+
+.flex-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Fixed inner CSS */
+
+.inner{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+.bar-icon, .close{
+    display: none;
+}
+
+/* Header CSS */
+
+header{
+    width: 100%;
+    height: 80vh;
+    background: url("../img/dd.jpg");
+    background-size: cover;
+    border-top: .6rem solid #4e82be;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus{
+    color: #dfdfdf;
+}
+
+.logo{
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li{
+    list-style-type: none;
+    margin-left: 1.5rem;
+    font-weight: 200;
+}
+
+.headings{
+    text-align: center;
+    color: #fff;
+    margin-top: 9rem;
+}
+
+.headings h1{
+    font-size: 3rem;
+    font-weight: 100;
+    margin-bottom: 1rem;
+}
+
+.headings p{
+    font-size: .8rem;
+    font-weight: 100;
+}
+
+/* Info Box CSS */
+
+.info-box section{
+    width: 30%;
+    padding: 1.3rem;
+}
+
+.info-box hr{
+    width: 0.5px;
+    height: auto;
+    border: 0;
+    background-color: #dfdfdf;
+}
+
+.info-box h3{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #4e82be;
+    line-height: 1.8rem;
+    margin-bottom: 1.2rem;
+}
+
+.info-box p{
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: grey;
+    line-height: 1.4rem;
+}
+
+.btn{
+    width: 80px;
+    height: 40px;
+    border: 0;
+    background: #4e82be;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    position: relative;
+    top: 1.4rem;
+}
+
+.btn:hover,
+.btn:focus{
+    color: #4e82be;
+    background: #fff;
+    border: 1px solid #4e82be;
+    cursor: pointer;
+}
+
+/* Four Box CSS */
+
+.blue-wrapper{
+    width: 100%;
+    background: #4e82be;
+    text-align: center;
+    color: #fff;
+}
+
+.blue-wrapper h1{
+    font-size: 2rem;
+    font-weight: 100;
+    margin-bottom: 1rem;
+}
+
+.blue-wrapper p{
+    font-size: .9rem;
+    font-weight: 100;
+    margin-bottom: 1.8rem;
+}
+
+.four-box{
+    width: 22%;
+    border: 1px solid #a0c2e8;
+    padding: 4rem 0;
+}
+
+.four-box img{
+    border-radius: 100%;
+    width: 65%;
+}
+
+.four-box h4{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 1.2rem;
+}
+
+.four-box h6{
+    font-size: 0.7rem;
+    font-weight: 100;
+    margin-top: 0.5rem;
+}
+
+/* Image Gallery CSS */
+
+.image-gallery h1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #4e82be;
+    margin-bottom: .4rem;
+}
+
+.image-gallery p{
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 100;
+    margin-bottom: 3.7rem;
+}
+
+.gallery-box{
+    width: 47%;
+}
+
+.gallery-box img{
+    width: 100%;
+}
+
+.gallery-box h4{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #4e82be;
+    margin: 1.3rem 0;
+}
+
+.gallery-box p{
+    text-align: left;
+    color: grey;
+    font-size: .8rem;
+    line-height: 1.2rem;
+    margin-bottom: 0;
+}
+
+/* footer CSS */
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-hr{
+    width: 100%;
+    height: 1px;
+    margin-bottom: 2rem;
+}
+
+.copyright p{
+    color: grey;
+    font-size: .8rem;
+}
+
+.social-icon {
+    position: relative;
+    top: -0.8rem;
+}
+
+.social-icon span{
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #4e82be;
+    padding: .5rem;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.social-icon span:hover,
+.social-icon span:focus{
+    color: #fff;
+    background:#4e82be;
+}
+
+/* Media Query */
+
+@media only screen and (max-width:970px){
+    .info-box section{
+        padding: 1rem;
+    }
+    .info-box hr{
+        width: 0.2px;
+    }
+    .info-box h3{
+        font-size: .8rem;
+        font-weight: 700;
+        line-height: 1.4rem;
+        margin-bottom: 1rem;
+    }
+    .info-box p{
+        font-size: 0.7rem;
+        font-weight: 300;
+        line-height: 1.2rem;
+    }  
+    .btn{
+        font-size: .8rem;
+        font-weight: 400;
+    }
+}
+
+@media only screen and (max-width:767px){
+    .headings h1{
+        font-size: 2.7rem;
+    }
+    .headings p{
+        font-size: .7rem;
+    }
+
+    nav ul{
+        width: 50%;
+        height: 100%;
+        background: rgb(12, 34, 55, 0.8);
+        display: none;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 2;
+        text-align: center;
+        padding-top: 7rem;
+    }
+    nav ul li{
+        padding: 1rem 0;
+        margin-left: 0;
+    }
+    .bar-icon{
+        display: inline-block;
+        color: #fff;
+        font-size: 1.2rem;
+        cursor: pointer;
+        position: absolute;
+        top: 2.2rem;
+        right: 2rem;
+    }
+    .close{
+        display: block;
+        font-size: 2.2rem;
+        background: transparent;
+        border: 0;
+        color: #dddddd;
+        position: absolute;
+        top: 1rem;
+        right: 2rem;
+    }
+    .close:hover{
+        cursor: pointer;
+        color: red;
+    }
+
+    .info-box section{
+        width: 100%;
+        padding: 2rem;
+    }
+    .info-box hr{
+        display: none;
+    }
+    .info-box h3{
+        font-size: 1.3rem;
+        font-weight: 500;
+        line-height: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    .info-box p{
+        font-size: 0.9rem;
+        font-weight: 300;
+        line-height: 1.4rem;
+    }
+    .btn{
+        font-size: 1rem;
+        font-weight: 400;
+        top: 0;
+        margin-top: 1.4rem;
+    }
+    
+    .blue-wrapper h1{
+        margin-top: .5rem;
+    }
+    .four-box{
+        width: 47%;
+        border: 1px solid #a0c2e8;
+        margin-bottom: 2rem;
+    }
+    .four-box h4{
+        font-size: 1.7rem;
+        font-weight: 300;
+    }
+    .four-box h6{
+        font-size: 0.8rem;
+        font-weight: 100;
+    }
+    
+    .image-gallery p{
+        text-align: center;
+        font-size: .9rem;
+        font-weight: 100;
+        margin-bottom: 0;
+    }
+    .gallery-box{
+        width: 100%;
+        margin-top: 2rem;
+    } 
+    .gallery-box h4{
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    .gallery-box p{
+        text-align: left;
+        font-size: 0.9rem;
+        font-weight: 300;
+        line-height: 1.4rem;
+        margin-bottom: 0;
+    }
+
+    footer{
+        text-align: center;
+    }
+    .social-icon{
+        width: 100%;
+        order: 1;
+        margin-bottom: 1rem;
+    }
+    .copyright{
+        width: 100%;
+        order: 2;
+    }  
+}
+
+@media only screen and (max-width:480px){
+    nav ul{
+        width: 60%;
+        padding-top: 6rem;
+    }
+    nav ul li{
+        padding: .8rem 0;
+        margin-left: 0;
+    }
+    .bar-icon{
+        top: 1.78rem;
+        right: 2rem;
+    }
+    .close{
+        top: .6rem;
+        right: 1.3rem;
+    }
+    
+    .headings{
+        margin-top: 11rem;
+    }
+    .headings h1{
+        font-size: 2.2rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .four-box{
+        width: 100%;
+    }
+    .four-box img{
+        width: 50%;
+    }
+    .four-box h4{
+        font-size: 1.4rem;
+    }
+    .four-box h6{
+        font-size: 0.8rem;
+    }
+    
+    .blue-wrapper h1, .image-gallery h1{
+        font-size: 1.8rem;
+    }
+    .blue-wrapper p, .image-gallery p{
+        font-size: 0.7rem;
+        font-weight: 300;
+    }
+
+    .copyright p{
+        font-size: .6rem;
+    }
+    .social-icon span{
+        font-size: .9rem;
+        padding: 0 .4rem;
+    }
+}
